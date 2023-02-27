@@ -1,5 +1,5 @@
-body {
-    background-color: lightblue;
+  body {
+    background-color: rgb(245, 206, 121);
   }
   
 h1 {
@@ -8,6 +8,46 @@ h1 {
   }
   
   p {
+    color: white;
     font-family: verdana;
     font-size: 20px;
   }
+
+  h3 , ul , section {
+    color: white;
+    font-family: verdana;
+  }
+
+  /*navegacion*/
+  .nav {
+    width:100vw;
+    height:60px;
+    background: green;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .nav .links a{
+    display:inline;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+      }
+  .nav.logo{
+    background-image:image(logo);
+    float: left;
+  }
+  .nav *{
+    color: white;
+    line-height: 20px;
+    }
+
+    .portada {
+      height: 0vh;
+      background:url(https://www.shutterstock.com/image-photo/beautiful-young-woman-slicing-red-260nw-1960575124.jpg)
+      center center no-repeat;
+      background-size: cover;
+      }
