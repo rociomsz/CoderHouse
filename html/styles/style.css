@@ -1,10 +1,19 @@
-  body {
+/*h1*/ @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+/*h3*/ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+body {
     background-color: rgb(245, 206, 121);
   }
-  
+h3{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
 h1 {
     color: white;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 44px;
   }
   
   p {
@@ -13,22 +22,37 @@ h1 {
     font-size: 20px;
   }
 
-  h3 , ul , section {
+  ul , section {
     color: white;
     font-family: verdana;
   }
 
   /*navegacion*/
-  .nav {
-    width:100vw;
-    height:60px;
-    background: green;
-    padding: 20px;
+  header{
+    display: flex;
+    min-height: 60px;
+    background-color: green;
+    justify-content: space-between;
+    align-items: center;
+     width:100vw;
     box-sizing: border-box;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+  }
+
+  .logo img {
+height: 60px; 
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  ul , section {
+    color: white;
+    font-family: verdana;
   }
   .nav .links a{
     display:inline;
@@ -79,6 +103,25 @@ h1 {
 
   .iconos * {
     color: coral;
-    font-family: verdana; 
-    text-align: center;
+    font-family:sans-serif; 
+    width: 90px;
+    height: 90px;
+    font-size: 18px;
+  
   }
+
+
+/*pagina recetas*/
+.pagrecetas * {
+  margin-top: 50px;/*no anda*/
+}
+
+.receta{
+    display:flex;
+    justify-content: ;
+  }
+
+b {
+  display: flow-root;
+  justify-content:center;
+}
