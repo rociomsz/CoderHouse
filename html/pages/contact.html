@@ -11,61 +11,37 @@
 <body>
 
     <!--navegador-->
-    <div class="nav">
-        <div class="links">
-          <a href="registrate.html">Registrate</a>
-          <a href="nosotros.html">Nosotros</a>
-          <a href="contact.html">Contacto</a>
-          <a href="recetas.html">Recetas</a><br>
-        </div>
-        </div>
-    <a href="../index.html">Volver</a>
-    <div class="nav">
-        <div class="links">
-          <a href="../pages/registrate.html">Registrate</a>
-          <a href="../pages/nosotros.html">Nosotros</a>
-          <a href="../pages/contact.html">Contacto</a>
-          <a href="../pages/recetas.html">Recetas</a><br>
-        </div>
-        </div>
+    <header>
+        <a href="#" class="logo">
+          <img src="../img/favicon.png" alt="logo Recetazas">
+        </a>
+        <section class="nav">
+          <div class="links">
+            <a href="registrate.html">Registrate</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contact.html">Contacto</a>
+            <a href="recetas.html">Recetas</a><br>
+          </div>
+        </section>
+      </header>
     <h2>Contactanos:</h2>
+<div class="contactanos">
     <form action="">
-        <div>
-            <label for="name">Ingresá tu nombre.</label><br>
+            <label for="name">Ingresá tu nombre.</label>
             <input name ="name" type="text">
-        </div>
-        <div>
-            <label for="mail">Escribe tu mail.</label><br>
+
+            <label for="mail">Escribe tu mail.</label>
             <input name ="mail" type="text">
-        </input>
-        </div>
-        <div>
-            <label for="edad">Escribe tu edad.</label><br>
+
+            <label for="edad">Escribe tu edad.</label>
             <input name ="edad" type="number">
-        </input>
-        </div>
-        <div>
-            <label for="country">Escribe tu país.</label><br>
-            <select name ="country" id="">
-                <option value="">Argentina</option>
-                <option value="">Brasil</option>
-                <option value="">Uruguay</option>
-                <option value="">Chile</option>
-                <option value="">Colombia</option>
-                <option value="">Venezuela</option>
-                <option value="">Perú</option>
-                <option value="">Ecuador</option>
-            </select>
-        </div>
-        <div>
-            <label for="comment">Escribí tu consulta.</label><br>
-            <textarea name="comment" id="" cols="30" rowa="10"></textarea>
-        </div>
-        <div>
-            <input type="reset" value="Borrar">
-            <input type="button" value="enviar">
-        </div>
+
+            <label for="msg">Escribí tu consulta.</label>
+            <textarea name="msg" type="text"></textarea>
+
+            <input type="submit" value="Enviar Consulta">
     </form>
+</div>
 
     <!--pie de pagina-->
 <footer class="piedepag">

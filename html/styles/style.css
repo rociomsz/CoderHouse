@@ -34,19 +34,18 @@ h1 {
     background-color: green;
     justify-content: space-between;
     align-items: center;
-     width:100vw;
+    display: flex;
+    width:100vw;
+    height:60px;
     box-sizing: border-box;
     position: fixed;
     top: 0;
+    right: 0;
     left: 0;
     z-index: 1;
   }
 
-  .logo img {
-height: 60px; 
-  }
-
-  a{
+  a {
     text-decoration: none;
   }
 
@@ -64,17 +63,30 @@ height: 60px;
     background-image:image(logo);
     float: left;
   }
+
+  .logo img {
+    height: 70px; 
+      }
+
   .nav *{
     color: white;
     line-height: 20px;
     }
 
+    .iconos * {
+      color: coral;
+      font-family:sans-serif; 
+      width: 90px;
+      height: 90px;
+      font-size: 18px;
+    }
+/*
     .portada {
       height: 0vh;
       background:url(https://www.shutterstock.com/image-photo/beautiful-young-woman-slicing-red-260nw-1960575124.jpg)
       center center no-repeat;
       background-size: cover;
-      }
+      }*/
 
       /*footer*/
   .piedepag {
@@ -84,44 +96,63 @@ height: 60px;
     padding: 20px;
     box-sizing: border-box;
     position: fixed;
+    align-items: center;
     bottom: 0;
     right: 0;
     z-index: 1;
+    flex-wrap: nowrap;
   }
   .piedepag *{
     color: white;
     font-family: verdana; 
     line-height: 20px;
+    align-items: center;
   }
 
   .piedepag .links a {
-    display:inline;
+    display:flex;
     float: right;
     margin-left: 10px;
     margin-right: 10px;
+    justify-content: flex-end;
   }
-
-  .iconos * {
-    color: coral;
-    font-family:sans-serif; 
-    width: 90px;
-    height: 90px;
-    font-size: 18px;
-  
-  }
-
 
 /*pagina recetas*/
 .pagrecetas * {
   margin-top: 50px;/*no anda*/
 }
 
-.receta{
+/*.receta{
     display:flex;
-    justify-content: ;
+    justify-content:center ;
   }
 
 b {
   display: flow-root;
   justify-content:center;
+}*/
+
+/*CONTACTO*/
+
+.contactanos {
+  height: calc(100vh - 60px);
+  background-color: rgb(245, 206, 121);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactanos form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactanos form label {
+  font-size: 20px;
+  margin-bottom: 5px;
 }
