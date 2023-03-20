@@ -156,3 +156,28 @@ b {
   font-size: 20px;
   margin-bottom: 5px;
 }
+
+/*registrate*/
+
+.registrate {
+  height: calc(100vh - 60px);
+  background-color: rgb(245, 206, 121);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registrate form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registrate form label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}

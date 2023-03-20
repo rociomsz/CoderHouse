@@ -4,44 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opcion2</title>
+    <title>Registrate</title>
 <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="../styles/style.css">
+<link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet">
 </head>
 <body>
-    <a href="../index.html">Volver</a>
+
+
     <!--navegador-->
-    <div class="nav">
-      <div class="links">
-        <a href="../pages/registrate.html">Registrate</a>
-        <a href="../pages/nosotros.html">Nosotros</a>
-        <a href="../pages/contact.html">Contacto</a>
-        <a href="../pages/recetas.html">Recetas</a><br>
-      </div>
-      </div>
+    <header>
+      <a href="../index.html" class="logo">
+        <img src="../img/favicon.png" alt="logo Recetazas">
+      </a>
+      <section class="nav">
+        <div class="links">
+          <a href="registrate.html">Registrate</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contact.html">Contacto</a>
+          <a href="recetas.html">Recetas</a><br>
+        </div>
+      </section>
+    </header>
+    <!--titulo-->
     <div>
         <h2> Registrate </h2>
   </div>
+  <!--Formulario de Bootstrap-->
+  <div class="registrate">
   <form>
+      <label for="validationTooltip01" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="validationTooltip01" value="" required="">
 
-    <div class="mb-3">
-      <label class="form-label">Correo</label>
-      <input type="email" class="form-control"><br><br>
-    
-    
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control">
-    </div><br>
+      <label for="validationTooltip02" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="validationTooltip02" value="" required="">
 
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input">
-      <label class="form-check-label" for="exampleCheck1">Recordarme</label>
-    </div>
+      <label for="validationTooltipUsername" class="form-label">Usuario</label>
+        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="">
 
-    <button type="submit" class="btn btn-primary">Enviar</button>
+      <label for="validationTooltip05" class="form-label">Contraseña</label>
+      <input type="text" class="form-control" id="validationTooltip05" required="">
 
-</form>
+      <button class="btn btn-primary" type="submit">Registrate</button>
+  </form>
+</div>
 
 <!--pie de pagina-->
 <footer class="piedepag">
